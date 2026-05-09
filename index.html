@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake</title>
+  </head>
+
+  <body>
+
+    <div id="game-container" class="game-container">
+      <header class="game-header">
+        <div id="score" class="score">Pontos: 0</div>
+        <button id="change-mode">Trocar modo</button>
+      </header>
+      <div class="start-screen">
+        <div class="game-options">
+          <h2>Modo de Jogo </h2>
+          <button id="with-walls" onclick="game.init(true)">Com paredes</button>
+          <button id="without-walls" onclick="game.init(false)">Sem paredes</button>
+        </div>
+      </div>
+
+
+      <div id="game-board" class="game-board">
+      </div>
+    </div>
+
+    <div id="game-over" class="game-over">
+      <h2>Game Over</h2>
+      <button id="restart-button">Reiniciar</button>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+
+</html>
